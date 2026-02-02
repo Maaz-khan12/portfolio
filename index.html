@@ -25,10 +25,13 @@
         }
 
         header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%), 
+                        url('profile-image.jpg') center/cover no-repeat;
             color: white;
             padding: 80px 0;
             text-align: center;
+            position: relative;
+            background-blend-mode: overlay;
         }
 
         header h1 {
@@ -137,6 +140,18 @@
             color: #667eea;
             font-weight: bold;
             margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        .experience-item .company a {
+            color: #667eea;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .experience-item .company a:hover {
+            color: #764ba2;
+            text-decoration: underline;
         }
 
         .experience-item ul {
@@ -234,6 +249,7 @@
             <div class="contact-info">
                 <a href="https://wa.me/923262122420">📱 WhatsApp</a>
                 <a href="mailto:brandbalouch602@gmail.com">✉️ Email</a>
+                <a href="https://www.linkedin.com/in/mohammad-maaz-k-b322202a7" target="_blank">💼 LinkedIn</a>
                 <a href="#">📍 Lahore, Pakistan</a>
             </div>
         </div>
@@ -243,7 +259,7 @@
         <section>
             <h2>About Me</h2>
             <p class="profile-text">
-                Results-driven E-Commerce Specialist & Shopify Developer with 3+ years of experience in Shopify store management, theme customization, product setup, and automation. Skilled in HTML, CSS, Java basics, Liquid language, and third-party app integrations. Strong background in dropshipping operations, reporting, inventory control, and client communication. Known for improving store UX, boosting conversions, and ensuring smooth e-commerce operations.
+                Results-driven E-Commerce Specialist & Shopify Developer with 3+ years of experience in Shopify store management, theme customization, product setup, and automation. Skilled in HTML, CSS, JavaScript, Liquid language, and third-party app integrations. Strong background in dropshipping operations, reporting, inventory control, and client communication. Known for improving store UX, boosting conversions, and ensuring smooth e-commerce operations.
             </p>
         </section>
 
@@ -253,8 +269,8 @@
                 <div class="skill-category">
                     <h3>Technical Skills</h3>
                     <ul>
-                        <li>HTML & CSS </li>
-                        <li>Java (Basic Programming Concepts)</li>
+                        <li>HTML & CSS</li>
+                        <li>JavaScript (ES6+)</li>
                         <li>Shopify Liquid Language</li>
                         <li>Shopify Theme Customization</li>
                         <li>Third-Party App Integrations</li>
@@ -267,8 +283,8 @@
                     <ul>
                         <li>Shopify Store Management</li>
                         <li>Shopify Theme Customization</li>
-                        <li>Shopify Content page Handling</li>
-                        <li>Shopify app integration</li>
+                        <li>Shopify Content Page Handling</li>
+                        <li>Shopify App Integration</li>
                         <li>Product Listing & Optimization</li>
                         <li>Dropshipping Operations</li>
                         <li>Inventory & Stock Control</li>
@@ -301,7 +317,7 @@
             
             <div class="experience-item">
                 <h3>Shopify Specialist</h3>
-                <p class="company">Ecomeback (USA Based)</p>
+                <p class="company"><a href="https://www.ecomback.com/" target="_blank">Ecomeback (USA Based) →</a></p>
                 <ul>
                     <li>Shopify product listing & theme customization for US stores</li>
                     <li>Integrated third-party apps & optimized store UX</li>
@@ -313,7 +329,7 @@
 
             <div class="experience-item">
                 <h3>E-Commerce Specialist</h3>
-                <p class="company">WBM International</p>
+                <p class="company"><a href="https://wbm.com" target="_blank">WBM International →</a></p>
                 <ul>
                     <li>Product uploads, stock updates & order fulfillment</li>
                     <li>Developed Excel dashboards for sales & inventory</li>
@@ -324,11 +340,11 @@
 
             <div class="experience-item">
                 <h3>Shopify Developer</h3>
-                <p class="company">SMA (USA Based)</p>
+                <p class="company"><a href="https://www.smaestimating.com/" target="_blank">SMA Estimating (USA Based) →</a></p>
                 <ul>
                     <li>Uploaded & optimized product listings using SEO</li>
                     <li>Developed and customized Shopify themes for improved UI/UX</li>
-                    <li>Learned and implemented HTML, CSS, Java (basics), and Shopify Liquid in real store projects</li>
+                    <li>Learned and implemented HTML, CSS, JavaScript, and Shopify Liquid in real store projects</li>
                     <li>Worked on store structuring, categorization & technical maintenance</li>
                     <li>Enhanced product visibility, performance & overall customer experience</li>
                 </ul>
@@ -384,6 +400,4 @@
         </div>
     </footer>
 </body>
-
 </html>
-
