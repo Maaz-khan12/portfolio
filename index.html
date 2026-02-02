@@ -25,45 +25,77 @@
         }
 
         header {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.85) 0%, rgba(118, 75, 162, 0.85) 100%), 
-                        url('profile-image.jpg') center/cover no-repeat;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
-            padding: 80px 0;
-            text-align: center;
+            padding: 60px 0;
             position: relative;
-            background-blend-mode: overlay;
+            overflow: hidden;
+        }
+
+        .header-content {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 50px;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 40px;
+        }
+
+        .profile-image-container {
+            position: relative;
+        }
+
+        .profile-image {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 6px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            object-position: center top;
+        }
+
+        .header-text {
+            text-align: left;
         }
 
         header h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
-        header p {
-            font-size: 1.3em;
-            margin-bottom: 30px;
+        header .subtitle {
+            font-size: 1.4em;
+            margin-bottom: 25px;
+            opacity: 0.95;
+            line-height: 1.4;
         }
 
         .contact-info {
             display: flex;
-            justify-content: center;
-            gap: 30px;
+            gap: 15px;
             flex-wrap: wrap;
-            margin-top: 20px;
+            margin-top: 25px;
         }
 
         .contact-info a {
             color: white;
             text-decoration: none;
-            padding: 10px 20px;
+            padding: 12px 24px;
             background: rgba(255, 255, 255, 0.2);
             border-radius: 25px;
             transition: 0.3s;
+            font-size: 0.95em;
+            backdrop-filter: blur(10px);
         }
 
         .contact-info a:hover {
             background: rgba(255, 255, 255, 0.3);
             transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
 
         section {
@@ -229,9 +261,39 @@
             margin-top: 40px;
         }
 
+        @media (max-width: 968px) {
+            .header-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .header-text {
+                text-align: center;
+            }
+
+            .profile-image-container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .contact-info {
+                justify-content: center;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2em;
+            }
+
+            .profile-image {
+                width: 200px;
+                height: 200px;
             }
 
             .skills-grid,
@@ -243,14 +305,19 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>Maaz Khan</h1>
-            <p>Shopify Developer | Theme & App Integration Expert | E-Commerce Specialist</p>
-            <div class="contact-info">
-                <a href="https://wa.me/923262122420">📱 WhatsApp</a>
-                <a href="mailto:brandbalouch602@gmail.com">✉️ Email</a>
-                <a href="https://www.linkedin.com/in/mohammad-maaz-k-b322202a7" target="_blank">💼 LinkedIn</a>
-                <a href="#">📍 Lahore, Pakistan</a>
+        <div class="header-content">
+            <div class="profile-image-container">
+                <img src="profile-image.jpg.jpeg" alt="Maaz Khan" class="profile-image">
+            </div>
+            <div class="header-text">
+                <h1>Maaz Khan</h1>
+                <p class="subtitle">Shopify Developer | Theme & App Integration Expert | E-Commerce Specialist</p>
+                <div class="contact-info">
+                    <a href="https://wa.me/923262122420">📱 WhatsApp</a>
+                    <a href="mailto:brandbalouch602@gmail.com">✉️ Email</a>
+                    <a href="https://www.linkedin.com/in/mohammad-maaz-k-b322202a7" target="_blank">💼 LinkedIn</a>
+                    <a href="#">📍 Lahore, Pakistan</a>
+                </div>
             </div>
         </div>
     </header>
@@ -401,5 +468,3 @@
     </footer>
 </body>
 </html>
-
-
