@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Maaz Khan — Shopify &amp; WordPress Developer | SEO Specialist</title>
-<meta name="description" content="Maaz Khan — Shopify &amp; WordPress Developer and Technical &amp; On-Page SEO Specialist. 3+ years building and optimizing custom online stores and websites.">
+<title>Mohammad Maaz Khan | Shopify &amp; WordPress Developer, SEO &amp; Accessibility</title>
+<meta name="description" content="Mohammad Maaz Khan: Shopify &amp; WordPress developer, technical SEO specialist and WCAG 2.2 web accessibility auditor. 4+ years building e-commerce stores from idea to monthly sales.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -411,7 +411,7 @@
 
     /* ---------- SERVICES + EDUCATION ---------- */
     .services{background:var(--light);padding:110px 0}
-    .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:2.8rem}
+    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:2.8rem}
     .svc{
         background:var(--white);border:1px solid var(--line);border-radius:14px;
         padding:26px 22px;transition:transform .25s, box-shadow .25s;
@@ -448,7 +448,7 @@
     .lang-row{margin-bottom:1rem}
     .lang-row:last-child{margin-bottom:0}
     .lang-row .top{display:flex;justify-content:space-between;font-size:.88rem;margin-bottom:.4rem}
-    .lang-row .top .pct{color:var(--muted);font-weight:500}
+    .lang-row .top .pct{color:var(--muted);font-weight:500;font-size:.8rem}
     .bar{height:7px;background:var(--line);border-radius:100px;overflow:hidden}
     .bar span{display:block;height:100%;background:linear-gradient(90deg,var(--amber),var(--amber-dark));border-radius:100px;width:0;transition:width 1.1s cubic-bezier(.16,1,.3,1)}
 
@@ -487,6 +487,19 @@
     }
     .foot-social a:hover{background:var(--amber);color:var(--navy);border-color:var(--amber);transform:translateY(-3px)}
     .foot-social svg{width:18px;height:18px}
+
+
+    /* ---------- ADDED: process flow, meta, extra tags ---------- */
+    .flow{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem;counter-reset:st;list-style:none}
+    .flow li{counter-increment:st;display:inline-flex;align-items:center;gap:.45rem;font-family:var(--disp);font-weight:600;font-size:.86rem;color:var(--white);background:rgba(255,255,255,.04);border:1px solid var(--line-dark);padding:.42rem .85rem .42rem .45rem;border-radius:100px}
+    .flow li::before{content:counter(st);width:22px;height:22px;border-radius:50%;background:var(--navy-4);border:1px solid var(--amber);color:var(--amber);display:grid;place-items:center;font-size:.72rem}
+    .flow li.last{background:var(--amber);color:var(--navy);border-color:var(--amber)}
+    .flow li.last::before{background:var(--navy);color:var(--amber)}
+    .tl-meta{font-size:.8rem;font-weight:500;color:var(--muted);margin-top:.2rem}
+    span.tl-company:hover{color:var(--amber-dark)}
+    .tag.woo{background:rgba(150,120,230,.14);color:#B9A4F5;border:1px solid rgba(150,120,230,.32)}
+    .tag.a11y{background:rgba(96,180,255,.12);color:#8CC8FF;border:1px solid rgba(96,180,255,.3)}
+    .cm svg{width:18px;height:18px}
 
     /* ---------- REVEAL ANIM ---------- */
     .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease, transform .7s cubic-bezier(.16,1,.3,1)}
@@ -546,7 +559,7 @@
 <!-- NAV -->
 <header class="nav" id="nav">
     <div class="wrap nav-inner">
-        <a href="#top" class="brand" aria-label="Maaz Khan home"><span class="dot"></span>Maaz<span>&nbsp;Khan</span></a>
+        <a href="#top" class="brand" aria-label="Mohammad Maaz Khan home"><span class="dot"></span>Maaz<span>&nbsp;Khan</span></a>
         <nav class="nav-links" id="navLinks" aria-label="Primary">
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -570,14 +583,16 @@
     <span class="float a"></span><span class="float b"></span><span class="float c"></span>
     <div class="wrap hero-grid">
         <div class="hero-copy">
-            <span class="hero-eyebrow">Shopify · WordPress · SEO</span>
+            <span class="hero-eyebrow">Shopify · WordPress · SEO · Accessibility</span>
             <h1>Maaz <span class="amber">Khan</span></h1>
             <div class="role">
                 <span>Shopify &amp; WordPress Developer</span>
                 <span class="sep"></span>
-                <span>Technical &amp; On-Page SEO Specialist</span>
+                <span>Technical SEO Specialist</span>
+                <span class="sep"></span>
+                <span>Web Accessibility Auditor (WCAG 2.2)</span>
             </div>
-            <p class="blurb">I build and optimize custom online stores and websites — fast, search-friendly, and built to convert. 3+ years turning ideas into live, high-performing e-commerce sites.</p>
+            <p class="blurb">I build e-commerce stores and business websites from the first idea to steady monthly sales: planning, design, development, SEO and ongoing management, all handled by one person. 4+ years of hands-on experience.</p>
             <div class="hero-cta">
                 <a class="btn btn-primary" href="https://wa.me/923262122420" target="_blank" rel="noopener noreferrer">
                     <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.478-1.115zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -588,8 +603,8 @@
         </div>
         <div class="hero-photo">
             <div class="accent"></div>
-            <div class="frame"><img src="profile-image.jpg" alt="Maaz Khan, Shopify and WordPress developer"></div>
-            <div class="badge"><b>3+</b> Years<br>Experience</div>
+            <div class="frame"><img src="profile-image.jpg" alt="Mohammad Maaz Khan, Shopify and WordPress developer"></div>
+            <div class="badge"><b>4+</b> Years<br>Experience</div>
         </div>
     </div>
 </section>
@@ -597,8 +612,8 @@
 <!-- MARQUEE -->
 <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-        <span>Shopify Development</span><span>WordPress Websites</span><span>On-Page SEO</span><span>Technical SEO</span><span>WooCommerce</span><span>....</span><span>Liquid</span><span>Core Web Vitals</span>
-        <span>Shopify Development</span><span>WordPress Websites</span><span>On-Page SEO</span><span>Technical SEO</span><span>WooCommerce</span><span>....</span><span>Liquid</span><span>Core Web Vitals</span>
+        <span>Shopify Development</span><span>WordPress &amp; WooCommerce</span><span>On-Page SEO</span><span>Technical SEO</span><span>WCAG 2.2 Accessibility</span><span>ADA Compliance</span><span>Liquid</span><span>Core Web Vitals</span>
+        <span>Shopify Development</span><span>WordPress &amp; WooCommerce</span><span>On-Page SEO</span><span>Technical SEO</span><span>WCAG 2.2 Accessibility</span><span>ADA Compliance</span><span>Liquid</span><span>Core Web Vitals</span>
     </div>
 </div>
 
@@ -607,15 +622,18 @@
     <div class="wrap about-grid">
         <div class="about-text reveal">
             <span class="eyebrow on-dark">About Me</span>
-            <h2 class="sec-title on-dark">Building stores that <span class="amber">load fast</span> &amp; sell more.</h2>
-            <p>I'm a <span class="hl">Shopify &amp; WordPress Developer</span> and <span class="hl">E-Commerce Specialist</span> with over 3 years of hands-on experience building custom online stores and business websites from the ground up.</p>
-            <p>My work covers Shopify (theme customization, Liquid, app integration), custom WordPress builds with .... &amp; WooCommerce, and <span class="hl">On-Page &amp; Technical SEO</span> — Core Web Vitals, XML sitemaps, and Google Search Console setup. The goal is always the same: clean UX, faster pages, and better conversions.</p>
+            <h2 class="sec-title on-dark">From the first idea to <span class="amber">steady monthly sales</span>.</h2>
+            <p>I'm <span class="hl">Mohammad Maaz Khan</span>, a <span class="hl">Shopify &amp; WordPress Developer</span> and <span class="hl">Technical SEO Specialist</span> with 4+ years of hands-on experience. I handle the full journey myself: planning the store, designing and developing it on Shopify or WordPress/WooCommerce, setting up strong on-page and technical SEO, and managing the site after launch so it keeps growing.</p>
+            <p>Alongside development, I work as a <span class="hl">web accessibility auditor</span>, helping US businesses meet WCAG 2.2 AA standards and reduce ADA compliance risk.</p>
+            <ol class="flow" aria-label="My process">
+                <li>Idea</li><li>Design</li><li>Development</li><li>SEO</li><li>Launch</li><li class="last">Monthly sales</li>
+            </ol>
         </div>
         <div class="stats reveal d2">
-            <div class="stat"><div class="num" data-count="3" data-suffix="+">0</div><div class="lbl">Years of Experience</div></div>
-            <div class="stat"><div class="num" data-count="7" data-suffix="+">0</div><div class="lbl">Websites &amp; Stores Delivered</div></div>
-            <div class="stat"><div class="num" data-count="4" data-suffix="">0</div><div class="lbl">Custom-Built Sites</div></div>
-            <div class="stat"><div class="num" data-count="97" data-suffix="%">0</div><div class="lbl">Order Accuracy Maintained</div></div>
+            <div class="stat"><div class="num" data-count="4" data-suffix="+">0</div><div class="lbl">Years of Experience</div></div>
+            <div class="stat"><div class="num" data-count="8" data-suffix="">0</div><div class="lbl">Stores &amp; Sites Built From Scratch</div></div>
+            <div class="stat"><div class="num" data-count="13" data-suffix="">0</div><div class="lbl">Live Projects Delivered</div></div>
+            <div class="stat"><div class="num" data-count="97" data-suffix="%+">0</div><div class="lbl">Order Accuracy Maintained</div></div>
         </div>
     </div>
 </section>
@@ -626,44 +644,56 @@
         <div class="skills-head reveal">
             <span class="eyebrow">What I Work With</span>
             <h2 class="sec-title">Skills &amp; Expertise</h2>
-            <p class="sec-lead">A full toolkit for launching and growing online stores — from front-end builds to search optimization.</p>
+            <p class="sec-lead">A full toolkit for launching and growing online stores, from custom builds and SEO to accessibility compliance.</p>
         </div>
         <div class="skill-cats">
             <div class="skill-card reveal">
-                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>Shopify Development</h3>
+                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>Shopify</h3>
                 <div class="chips">
-                    <span class="chip">Store Setup &amp; Management</span>
-                    <span class="chip">Theme Customization</span>
+                    <span class="chip">Store Setup</span>
+                    <span class="chip">Online Store 2.0 Themes</span>
                     <span class="chip">Liquid</span>
+                    <span class="chip">Sections &amp; Blocks</span>
+                    <span class="chip">Metafields</span>
                     <span class="chip">App Integration</span>
-                    <span class="chip">Product Upload &amp; Optimization</span>
-                    <span class="chip">Store Speed &amp; UX</span>
+                    <span class="chip">Product &amp; Collection Management</span>
+                    <span class="chip">CSV Import / Export</span>
                 </div>
             </div>
             <div class="skill-card reveal d1">
-                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>WordPress Development</h3>
+                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>WordPress &amp; WooCommerce</h3>
                 <div class="chips">
-                    <span class="chip">Custom WordPress Builds</span>
-                    <span class="chip">....</span>
+                    <span class="chip">Custom Theme Development</span>
                     <span class="chip">WooCommerce</span>
-                    <span class="chip">Responsive Design</span>
+                    <span class="chip">Page Builders</span>
                     <span class="chip">Plugin Configuration</span>
                     <span class="chip">Landing Pages</span>
                 </div>
             </div>
             <div class="skill-card reveal d2">
-                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>SEO — On-Page &amp; Technical</h3>
+                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></span>SEO: On-Page &amp; Technical</h3>
                 <div class="chips">
                     <span class="chip">Keyword Research</span>
-                    <span class="chip">On-Page Optimization</span>
+                    <span class="chip">On-Page SEO</span>
                     <span class="chip">Technical SEO Audits</span>
-                    <span class="chip">Core Web Vitals</span>
+                    <span class="chip">Structured Data (JSON-LD)</span>
                     <span class="chip">XML Sitemaps</span>
-                    <span class="chip">Search Console</span>
+                    <span class="chip">Core Web Vitals</span>
                     <span class="chip">Page Speed</span>
+                    <span class="chip">Blog &amp; Content Structure</span>
                 </div>
             </div>
             <div class="skill-card reveal">
+                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2"/><path d="M4 8.5c2.7.8 5.3 1.2 8 1.2s5.3-.4 8-1.2"/><path d="M12 9.7V14"/><path d="m8.5 21 3.5-7 3.5 7"/></svg></span>Web Accessibility</h3>
+                <div class="chips">
+                    <span class="chip">WCAG 2.2 AA Audits</span>
+                    <span class="chip">ADA Compliance</span>
+                    <span class="chip">Keyboard Testing</span>
+                    <span class="chip">Screen-Reader Testing</span>
+                    <span class="chip">Remediation</span>
+                </div>
+            </div>
+            <div class="skill-card reveal d1">
                 <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>Front-End</h3>
                 <div class="chips">
                     <span class="chip">HTML5</span>
@@ -673,22 +703,15 @@
                     <span class="chip">Debugging &amp; UI Fixes</span>
                 </div>
             </div>
-            <div class="skill-card reveal d1">
-                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></span>E-Commerce Operations</h3>
-                <div class="chips">
-                    <span class="chip">Inventory &amp; Stock Control</span>
-                    <span class="chip">Order Fulfillment</span>
-                    <span class="chip">CSV Import / Export</span>
-                    <span class="chip">Dropshipping Operations</span>
-                </div>
-            </div>
             <div class="skill-card reveal d2">
-                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="8"/><rect x="12" y="6" width="3" height="12"/><rect x="17" y="13" width="3" height="5"/></svg></span>Tools &amp; Data</h3>
+                <h3><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><rect x="7" y="10" width="3" height="8"/><rect x="12" y="6" width="3" height="12"/><rect x="17" y="13" width="3" height="5"/></svg></span>Tools</h3>
                 <div class="chips">
                     <span class="chip">Google Search Console</span>
-                    <span class="chip">Google Analytics</span>
-                    <span class="chip">Excel / Sheets Dashboards</span>
-                    <span class="chip">Data Reporting</span>
+                    <span class="chip">Google Analytics (GA4)</span>
+                    <span class="chip">PageSpeed Insights / Lighthouse</span>
+                    <span class="chip">Screaming Frog</span>
+                    <span class="chip">Google Sheets / Excel</span>
+                    <span class="chip">Canva</span>
                 </div>
             </div>
         </div>
@@ -701,20 +724,56 @@
         <div class="exp-head reveal">
             <span class="eyebrow">Where I've Worked</span>
             <h2 class="sec-title">Work Experience</h2>
-            <p class="sec-lead">Three years across US-based and international e-commerce teams — building, optimizing, and maintaining live stores.</p>
+            <p class="sec-lead">4+ years with US-based and international e-commerce teams: building, optimizing, auditing and managing live stores and websites.</p>
         </div>
         <div class="timeline reveal d1">
             <div class="tl-item">
-                <div class="tl-role">Shopify Specialist</div>
-                <a class="tl-company" href="https://www.ecomback.com/" target="_blank" rel="noopener noreferrer">
-                    Ecomeback — USA
+                <div class="tl-role">Shopify Developer &amp; SEO Specialist</div>
+                <a class="tl-company" href="https://www.smaestimating.com/" target="_blank" rel="noopener noreferrer">
+                    SMA Estimating LLC (USA)
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
+                <div class="tl-meta">Full-time · Jan 2025 – Present</div>
                 <ul class="tl-list">
-                    <li>Shopify product listing &amp; theme customization for US stores.</li>
-                    <li>Integrated third-party apps &amp; optimized store UX for conversions.</li>
-                    <li>Built automated dashboards &amp; reports in Google Sheets.</li>
-                    <li>Managed dropshipping operations &amp; day-to-day client support.</li>
+                    <li>Built and manage two Shopify lighting stores from scratch: Circ Lighting and Alvetto Lighting.</li>
+                    <li>Custom theme development and customisation using Liquid, HTML, CSS and JavaScript.</li>
+                    <li>Planned store structure, collections and navigation for large lighting catalogues.</li>
+                    <li>On-page and technical SEO: meta data, structured data, sitemaps, Google Search Console, Core Web Vitals.</li>
+                    <li>Ongoing store management: product uploads, variants, collections and performance.</li>
+                </ul>
+            </div>
+            <div class="tl-item">
+                <div class="tl-role">WordPress &amp; WooCommerce Developer, SEO &amp; Accessibility</div>
+                <span class="tl-company">Kaarvaan Group LLC (USA)</span>
+                <div class="tl-meta">Remote · Present</div>
+                <ul class="tl-list">
+                    <li>Built three WooCommerce stores (Red Light Rise, PupPooch, PetRascal) from idea to live sales.</li>
+                    <li>Built three service-based WordPress websites (Access Level Up, WebRanko, Universe Estimating).</li>
+                    <li>Custom-coded WordPress themes, mega menus, category structures and on-page SEO.</li>
+                    <li>Content and blog structure built to support organic rankings.</li>
+                </ul>
+            </div>
+            <div class="tl-item">
+                <div class="tl-role">Web Accessibility Specialist</div>
+                <a class="tl-company" href="https://themillionroses.com/" target="_blank" rel="noopener noreferrer">
+                    TMR USA Inc. (The Million Roses)
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+                <div class="tl-meta">Remote</div>
+                <ul class="tl-list">
+                    <li>Accessibility audit and remediation on a luxury Shopify store against WCAG 2.2 AA.</li>
+                </ul>
+            </div>
+            <div class="tl-item">
+                <div class="tl-role">Shopify Specialist</div>
+                <a class="tl-company" href="https://www.ecomback.com/" target="_blank" rel="noopener noreferrer">
+                    Ecomeback (USA)
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+                <div class="tl-meta">Earlier experience</div>
+                <ul class="tl-list">
+                    <li>Product listings, theme customisation and app integration.</li>
+                    <li>Google Sheets dashboards and dropshipping operations.</li>
                 </ul>
             </div>
             <div class="tl-item">
@@ -723,24 +782,10 @@
                     WBM International
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
+                <div class="tl-meta">Earlier experience</div>
                 <ul class="tl-list">
-                    <li>Product uploads, stock updates &amp; order fulfillment at scale.</li>
-                    <li>Developed Excel dashboards for sales &amp; inventory tracking.</li>
-                    <li>Maintained 97%+ order accuracy across high-volume operations.</li>
-                    <li>Coordinated with international suppliers for seamless shipping.</li>
-                </ul>
-            </div>
-            <div class="tl-item">
-                <div class="tl-role">Shopify Developer</div>
-                <a class="tl-company" href="https://www.smaestimating.com/" target="_blank" rel="noopener noreferrer">
-                    SMA Estimating — USA
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
-                </a>
-                <ul class="tl-list">
-                    <li>Uploaded &amp; optimized product listings using on-page SEO.</li>
-                    <li>Developed &amp; customized Shopify themes for improved UI/UX.</li>
-                    <li>Implemented HTML, CSS, JavaScript &amp; Shopify Liquid in live projects.</li>
-                    <li>Handled store structuring, categorization &amp; technical maintenance.</li>
+                    <li>Product uploads, stock updates and order fulfilment at scale.</li>
+                    <li>Maintained 97%+ order accuracy.</li>
                 </ul>
             </div>
         </div>
@@ -754,32 +799,64 @@
             <div class="reveal">
                 <span class="eyebrow on-dark">Selected Work</span>
                 <h2 class="sec-title on-dark">Projects &amp; Portfolio</h2>
-                <p class="sec-lead on-dark">Live stores and websites I've built and optimized. Every link is clickable — take a look.</p>
+                <p class="sec-lead on-dark">Live stores and websites built from idea to design, development, SEO and monthly sales. Every link is clickable, so take a look.</p>
             </div>
             <div class="filters reveal d1" role="group" aria-label="Filter projects">
                 <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="wp">WordPress</button>
                 <button class="filter-btn" data-filter="shopify">Shopify</button>
+                <button class="filter-btn" data-filter="woo">WooCommerce</button>
+                <button class="filter-btn" data-filter="wp">WordPress</button>
+                <button class="filter-btn" data-filter="a11y">Accessibility</button>
             </div>
         </div>
         <div class="proj-grid" id="projGrid">
 
-            <article class="proj-card reveal" data-cat="wp">
-                <div class="proj-top"><span class="proj-mono">W</span><span class="tag wp">WordPress</span></div>
-                <h3>WebRanko</h3>
-                <div class="url">webranko.co.uk</div>
-                <p>Custom WordPress site built with .... — responsive design, on-page SEO and optimized page performance.</p>
-                <a class="proj-link" href="https://webranko.co.uk/" target="_blank" rel="noopener noreferrer">Visit site
+            <article class="proj-card reveal" data-cat="shopify">
+                <div class="proj-top"><span class="proj-mono">C</span><span class="tag shopify">Shopify</span></div>
+                <h3>Circ Lighting</h3>
+                <div class="url">circlighting.com</div>
+                <p>Designer lighting store. Full store build, theme customisation, collection architecture, product uploads, on-page SEO, XML sitemap and Google Search Console setup.</p>
+                <a class="proj-link" href="https://circlighting.com/" target="_blank" rel="noopener noreferrer">Visit site
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
             </article>
 
-            <article class="proj-card reveal d1" data-cat="wp">
-                <div class="proj-top"><span class="proj-mono">X</span><span class="tag wp">WordPress</span></div>
-                <h3>XYUltra</h3>
-                <div class="url">xyultra.com</div>
-                <p>Custom WordPress build with a tailored layout, WooCommerce-ready structure and full on-page SEO setup.</p>
-                <a class="proj-link" href="https://xyultra.com/" target="_blank" rel="noopener noreferrer">Visit site
+            <article class="proj-card reveal d1" data-cat="shopify">
+                <div class="proj-top"><span class="proj-mono">A</span><span class="tag shopify">Shopify</span></div>
+                <h3>Alvetto Lighting</h3>
+                <div class="url">alvettolighting.com</div>
+                <p>Designer and architectural lighting: pendants, alabaster, recessed, track, outdoor and LED accessories. Multi-level mega menu, room-by-room shopping pages, commercial lighting pages, a lighting blog and full SEO setup.</p>
+                <a class="proj-link" href="https://alvettolighting.com/" target="_blank" rel="noopener noreferrer">Visit site
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+            </article>
+
+            <article class="proj-card reveal d2" data-cat="woo">
+                <div class="proj-top"><span class="proj-mono">R</span><span class="tag woo">WooCommerce</span></div>
+                <h3>Red Light Rise</h3>
+                <div class="url">redlightrise.com</div>
+                <p>US red light therapy device store with 15+ concern- and device-based collections, comparison tables, FAQ, a certifications section and an SEO-focused research blog.</p>
+                <a class="proj-link" href="https://redlightrise.com/" target="_blank" rel="noopener noreferrer">Visit site
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+            </article>
+
+            <article class="proj-card reveal" data-cat="woo">
+                <div class="proj-top"><span class="proj-mono">P</span><span class="tag woo">WooCommerce</span></div>
+                <h3>PupPooch</h3>
+                <div class="url">puppooch.com</div>
+                <p>Dog supplies store on a custom-coded theme: 47 categories, shop-by-need, size and breed navigation, interactive tools (dog age calculator, size finder, breed size chart) and SEO guides.</p>
+                <a class="proj-link" href="https://puppooch.com/" target="_blank" rel="noopener noreferrer">Visit site
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+            </article>
+
+            <article class="proj-card reveal d1" data-cat="woo">
+                <div class="proj-top"><span class="proj-mono">P</span><span class="tag woo">WooCommerce</span></div>
+                <h3>PetRascal</h3>
+                <div class="url">petrascal.com</div>
+                <p>Dog and cat accessories store with mega menu navigation, filterable collections, bundles, wishlist and quick view, and a pet care guides blog.</p>
+                <a class="proj-link" href="https://petrascal.com/" target="_blank" rel="noopener noreferrer">Visit site
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
             </article>
@@ -788,18 +865,48 @@
                 <div class="proj-top"><span class="proj-mono">A</span><span class="tag wp">WordPress</span></div>
                 <h3>Access Level Up</h3>
                 <div class="url">accesslevelup.com</div>
-                <p>Custom WordPress website built in .... with clean UI/UX and a solid technical SEO foundation.</p>
+                <p>Digital accessibility agency website (ADA, WCAG 2.2, Section 508): service and industry landing pages, pricing tiers, a free-assessment funnel and a regularly updated blog.</p>
                 <a class="proj-link" href="https://accesslevelup.com/" target="_blank" rel="noopener noreferrer">Visit site
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
             </article>
 
-            <article class="proj-card reveal" data-cat="shopify">
-                <div class="proj-top"><span class="proj-mono">C</span><span class="tag shopify">Shopify</span></div>
-                <h3>Circ Lighting</h3>
-                <div class="url">circlighting.com</div>
-                <p>Custom Shopify store — product uploads, on-page SEO, XML sitemap submission and Google Search Console setup.</p>
-                <a class="proj-link" href="https://circlighting.com/" target="_blank" rel="noopener noreferrer">Visit site
+            <article class="proj-card reveal" data-cat="wp">
+                <div class="proj-top"><span class="proj-mono">W</span><span class="tag wp">WordPress</span></div>
+                <h3>WebRanko</h3>
+                <div class="url">webranko.co.uk</div>
+                <p>UK digital marketing agency website with responsive design, on-page SEO and optimised page performance.</p>
+                <a class="proj-link" href="https://webranko.co.uk/" target="_blank" rel="noopener noreferrer">Visit site
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+            </article>
+
+            <article class="proj-card reveal d1" data-cat="wp">
+                <div class="proj-top"><span class="proj-mono">U</span><span class="tag wp">WordPress</span></div>
+                <h3>Universe Estimating</h3>
+                <div class="url">universeestimating.com</div>
+                <p>Construction estimating services website with service pages, lead forms and on-page SEO.</p>
+                <a class="proj-link" href="https://universeestimating.com/" target="_blank" rel="noopener noreferrer">Visit site
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+            </article>
+
+            <article class="proj-card reveal d2" data-cat="a11y">
+                <div class="proj-top"><span class="proj-mono">T</span><span class="tag a11y">Accessibility</span></div>
+                <h3>The Million Roses</h3>
+                <div class="url">themillionroses.com</div>
+                <p>Luxury preserved-roses brand in California. WCAG 2.2 AA audit and remediation: keyboard navigation, screen-reader labels, colour contrast and focus visibility.</p>
+                <a class="proj-link" href="https://themillionroses.com/" target="_blank" rel="noopener noreferrer">Visit site
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
+                </a>
+            </article>
+
+            <article class="proj-card reveal" data-cat="wp">
+                <div class="proj-top"><span class="proj-mono">X</span><span class="tag wp">WordPress</span></div>
+                <h3>XYUltra</h3>
+                <div class="url">xyultra.com</div>
+                <p>Custom WordPress build, WooCommerce-ready, with full on-page SEO.</p>
+                <a class="proj-link" href="https://xyultra.com/" target="_blank" rel="noopener noreferrer">Visit site
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
             </article>
@@ -808,8 +915,8 @@
                 <div class="proj-top"><span class="proj-mono">P</span><span class="tag shopify">Shopify</span></div>
                 <h3>The Park Wholesale</h3>
                 <div class="url">theparkwholesale.com</div>
-                <p>Shopify store optimization — product uploads, SEO, theme customization and improved store structure.</p>
-                <a class="proj-link" href="https://theparkwholesale.com" target="_blank" rel="noopener noreferrer">Visit site
+                <p>Shopify optimisation, product uploads, SEO and theme customisation.</p>
+                <a class="proj-link" href="https://theparkwholesale.com/" target="_blank" rel="noopener noreferrer">Visit site
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
             </article>
@@ -818,8 +925,8 @@
                 <div class="proj-top"><span class="proj-mono">O</span><span class="tag shopify">Shopify</span></div>
                 <h3>Orly Beauty</h3>
                 <div class="url">orlybeauty.com</div>
-                <p>Shopify customization with product uploads, on-page SEO and third-party app integrations for a beauty brand.</p>
-                <a class="proj-link" href="https://orlybeauty.com" target="_blank" rel="noopener noreferrer">Visit site
+                <p>Shopify customisation, product uploads, on-page SEO and app integrations.</p>
+                <a class="proj-link" href="https://orlybeauty.com/" target="_blank" rel="noopener noreferrer">Visit site
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
             </article>
@@ -828,8 +935,8 @@
                 <div class="proj-top"><span class="proj-mono">A</span><span class="tag shopify">Shopify</span></div>
                 <h3>Atenai London</h3>
                 <div class="url">atenailondon.com</div>
-                <p>Shopify store customization, product organization and brand-specific improvements for a London label.</p>
-                <a class="proj-link" href="https://atenailondon.com" target="_blank" rel="noopener noreferrer">Visit site
+                <p>Shopify customisation and product organisation for a London label.</p>
+                <a class="proj-link" href="https://atenailondon.com/" target="_blank" rel="noopener noreferrer">Visit site
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7"/><path d="M7 7h10v10"/></svg>
                 </a>
             </article>
@@ -843,18 +950,16 @@
     <div class="wrap">
         <div class="skills-head reveal">
             <span class="eyebrow">How I Can Help</span>
-            <h2 class="sec-title">Services I Deliver</h2>
-            <p class="sec-lead">End-to-end store and website work — from the first build to ongoing SEO and optimization.</p>
+            <h2 class="sec-title">Services I Offer</h2>
+            <p class="sec-lead">End-to-end store and website work, from the first idea to launch, SEO, accessibility and ongoing growth.</p>
         </div>
         <div class="svc-grid">
-            <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><h4>Custom Shopify Store Development</h4></div>
-            <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h4>Custom WordPress Websites (....)</h4></div>
-            <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h4>On-Page SEO Optimization</h4></div>
-            <div class="svc reveal d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h4>Technical SEO Audits &amp; Fixes</h4></div>
-            <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div><h4>WooCommerce Setup &amp; Management</h4></div>
-            <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><h4>Product Upload &amp; Optimization</h4></div>
-            <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h4>Page Speed &amp; Core Web Vitals</h4></div>
-            <div class="svc reveal d3"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div><h4>Search Console &amp; Sitemap Setup</h4></div>
+            <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg></div><h4>Shopify Store Development, From Idea to Sales</h4></div>
+            <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><h4>WordPress &amp; WooCommerce Website Development</h4></div>
+            <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg></div><h4>On-Page &amp; Technical SEO</h4></div>
+            <div class="svc reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h4>Page Speed &amp; Core Web Vitals Optimisation</h4></div>
+            <div class="svc reveal d1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="4.5" r="2"/><path d="M4 8.5c2.7.8 5.3 1.2 8 1.2s5.3-.4 8-1.2"/><path d="M12 9.7V14"/><path d="m8.5 21 3.5-7 3.5 7"/></svg></div><h4>Web Accessibility Audits &amp; Fixes (WCAG 2.2 / ADA)</h4></div>
+            <div class="svc reveal d2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><h4>Store Management, Product Uploads &amp; Optimisation</h4></div>
         </div>
 
         <!-- EDUCATION + LANGUAGES -->
@@ -868,9 +973,9 @@
             </div>
             <div class="lang-card reveal d1">
                 <h4><span class="d"></span>Languages</h4>
-                <div class="lang-row"><div class="top"><span>English</span><span class="pct">80%</span></div><div class="bar"><span data-w="80%"></span></div></div>
-                <div class="lang-row"><div class="top"><span>Urdu</span><span class="pct">100%</span></div><div class="bar"><span data-w="100%"></span></div></div>
-                <div class="lang-row"><div class="top"><span>Punjabi</span><span class="pct">100%</span></div><div class="bar"><span data-w="100%"></span></div></div>
+                <div class="lang-row"><div class="top"><span>English</span><span class="pct">Professional</span></div><div class="bar"><span data-w="80%"></span></div></div>
+                <div class="lang-row"><div class="top"><span>Urdu</span><span class="pct">Native</span></div><div class="bar"><span data-w="100%"></span></div></div>
+                <div class="lang-row"><div class="top"><span>Punjabi</span><span class="pct">Native</span></div><div class="bar"><span data-w="100%"></span></div></div>
             </div>
         </div>
     </div>
@@ -880,8 +985,8 @@
 <section class="contact" id="contact">
     <div class="wrap contact-inner">
         <span class="eyebrow on-dark" style="justify-content:center">Let's Work Together</span>
-        <h2>Have a store or website<br>in mind? <span class="amber">Let's build it.</span></h2>
-        <p>Whether it's a new Shopify store, a custom WordPress site, or fixing your SEO — I'm one message away.</p>
+        <h2>Have a store or website<br>in mind? <span class="amber">I can take it from idea to sales.</span></h2>
+        <p>A new Shopify store, a WordPress or WooCommerce site, an SEO fix or a WCAG 2.2 accessibility audit: I'm one message away.</p>
         <div class="contact-cta">
             <a class="btn btn-primary" href="https://wa.me/923262122420" target="_blank" rel="noopener noreferrer">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.478-1.115zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
@@ -895,7 +1000,8 @@
         <div class="contact-meta">
             <span class="cm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><a href="https://wa.me/923262122420" target="_blank" rel="noopener noreferrer">+92 326 2122420</a></span>
             <span class="cm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg><a href="mailto:brandbalouch602@gmail.com">brandbalouch602@gmail.com</a></span>
-            <span class="cm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lahore, Pakistan</span>
+            <span class="cm"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><a href="https://www.linkedin.com/in/mohammad-maaz-k" target="_blank" rel="noopener noreferrer">linkedin.com/in/mohammad-maaz-k</a></span>
+            <span class="cm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lahore, Pakistan · Remote worldwide</span>
         </div>
     </div>
 </section>
@@ -904,8 +1010,8 @@
 <!-- FOOTER -->
 <footer>
     <div class="wrap foot-inner">
-        <div class="foot-brand"><span class="dot"></span>Maaz Khan</div>
-        <p>&copy; <span id="year"></span> Maaz Khan — Shopify &amp; WordPress Developer. Available for freelance projects.</p>
+        <div class="foot-brand"><span class="dot"></span>Mohammad Maaz Khan</div>
+        <p>&copy; <span id="year"></span> Mohammad Maaz Khan · Shopify &amp; WordPress Developer · Available for freelance projects.</p>
         <div class="foot-social">
             <a href="https://wa.me/923262122420" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.478-1.115zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.166-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.71.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
             <a href="mailto:brandbalouch602@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
